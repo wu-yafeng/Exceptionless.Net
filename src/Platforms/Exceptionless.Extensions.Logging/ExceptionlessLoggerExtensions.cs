@@ -27,7 +27,7 @@ namespace Exceptionless {
         /// Adds Exceptionless to the logging pipeline using the <see cref="ExceptionlessClient.Default"/>.
         /// </summary>
         /// <param name="builder">The <see cref="ILoggingBuilder"/>.</param>
-        /// <param name="client">If a client is not specified then the <see cref="ExceptionlessClient.Default"/> wil be used.</param>
+        /// <param name="client">If a client is not specified then the <see cref="ExceptionlessClient.Default"/> will be used.</param>
         /// <returns>The <see cref="ILoggingBuilder"/>.</returns>
         public static ILoggingBuilder AddExceptionless(this ILoggingBuilder builder, ExceptionlessClient client = null) {
             builder.AddProvider(new ExceptionlessLoggerProvider(client ?? ExceptionlessClient.Default));
@@ -70,7 +70,7 @@ namespace Exceptionless {
         /// Adds Exceptionless to the logging pipeline using the <see cref="ExceptionlessClient.Default"/>.
         /// </summary>
         /// <param name="factory">The <see cref="ILoggerFactory"/>.</param>
-        /// <param name="client">If a client is not specified then the <see cref="ExceptionlessClient.Default"/> wil be used.</param>
+        /// <param name="client">If a client is not specified then the <see cref="ExceptionlessClient.Default"/> will be used.</param>
         /// <returns>The <see cref="ILoggerFactory"/>.</returns>
         [Obsolete("Use ExceptionlessLoggerExtensions.AddExceptionless(ILoggingBuilder,ExceptionlessClient) instead.")]
         public static ILoggerFactory AddExceptionless(this ILoggerFactory factory, ExceptionlessClient client = null) {
