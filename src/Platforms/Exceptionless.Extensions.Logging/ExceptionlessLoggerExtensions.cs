@@ -65,7 +65,6 @@ namespace Exceptionless {
             builder.AddProvider(new ExceptionlessLoggerProvider(configure));
             return builder;
         }
-        #region Obsolute
         /// <summary>
         /// Adds Exceptionless to the logging pipeline using the <see cref="ExceptionlessClient.Default"/>.
         /// </summary>
@@ -113,6 +112,5 @@ namespace Exceptionless {
             factory.AddProvider(new ExceptionlessLoggerProvider(configure));
             return factory;
         } 
-        #endregion
     }
 }
